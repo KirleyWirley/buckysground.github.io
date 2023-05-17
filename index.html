@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: black;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink 1.1s ease-in-out infinite;
+}
+
+@font-face {
+    font-family: VHSFont;
+    src: url(VCR_OSD_MONO_1.001.ttf);
+}
+  
+p {
+    font-family: VHSFont;
+    color: white;
+    font-size: 40px;
+}
+</style>
+<title>Unknown</title>
+</head>
+<body>
+<script>
+// Listen for the keydown event
+document.addEventListener("keydown", function(event) {
+    // Check if the key pressed is the spacebar
+    if (event.code === "Space") {
+    // Trigger an alert message
+    window.location = "video.html";
+    }
+});
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<p class="blink">Press Space To Continue...</p>
+</center>
+</body>
+</html>
